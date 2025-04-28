@@ -4,7 +4,7 @@ export default {
     author: 'chixirra',
     description: 'my personal website :)',
     keywords: 'chixirra, chi, irra, chixi, chix, xirra, portfolio, website, chixirra.xyz',
-    color: '#4ae289',
+    color: '#572f97',
     url: 'https://chixirra.xyz',
     image: 'https://chixirra.xyz/meta.png',
     // this is the image that will be used for the og:image tag, i recommend to use a 1200x630 image
@@ -12,7 +12,7 @@ export default {
   },
   customize: {
     headerWarning: {
-      enabled: true,
+      enabled: false,
       size: 5, // this is just padding size
       message: `i'm still working on coding this website, due to that, things may not work as intended and may look VERY wrong`,
     }, // this is the message at the top of the page, you can use this to advertise that you are looking for a job or something like that, or you can disable it
@@ -25,6 +25,9 @@ export default {
       showProfilePicture: false, // the profile picture will disappear for small screens regardless of this setting
     },
     aboutMePage: {
+      randomQuote: {
+        enabled: true, // enable the random quote widget
+      },
       biography: `- feel free to call me cristian :) <br />
             - I'm a 17-year-old Romanian high school
             student, learning UI/UX design
@@ -53,19 +56,19 @@ export default {
       // i would recommend not keeping this very short because it will look weird on larger screens afterwards
     },
   },
-  widgets: {
-    // this is relatively advanced if you have no idea what an API is, while it isn't complicated to set up, you should familiarize yourself with the concept of APIs and how to use them
-    api: {
-      discord: {
-        // please check the .env.example file I've provided below and make a new discord bot and put in the required keys https://discord.com/developers/applications
-        enabled: true, // enable showing discord status (to be specific, show if you're online or not)
-        apiLink: 'https://api.chixirra.xyz/get/status', // please go to the /discord directory and follow the readme to set up the discord bot and the express server
-      },
-      // spotify: { // not yet
-      //     enabled: true, // enable showing spotify song
-      //   },
-    },
-  },
+
+  // this is relatively advanced if you have no idea what an API is, while it isn't complicated to set up, you should familiarize yourself with the concept of APIs and how to use them
+  // api: {
+  //   discord: {
+  //     // please check the .env.example file I've provided below and make a new discord bot and put in the required keys https://discord.com/developers/applications
+  //     enabled: true, // enable showing discord status (to be specific, show if you're online or not)
+  //     apiLink: 'https://api.chixirra.xyz/get/status', // please go to the /discord directory and follow the readme to set up the discord bot and the express server
+  //   },
+  //   spotify: {
+  //     // not yet
+  //     enabled: true, // enable showing spotify song
+  //   },
+  // ignore this since i realized i can't currently do the discord thing since i can't buy a server or something right now
 
   links: {
     repository: {

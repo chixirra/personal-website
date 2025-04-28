@@ -13,7 +13,7 @@ the -g extension is the gradient color for all those variables
 
 /* remember to change the metadata in the config since it is not automatic */
 /* default theme */
-@theme {
+/* @theme {
   --color-accent: #4ae289;
   --color-accent-g: #92dfc4;
   --color-black: #071008;
@@ -21,10 +21,10 @@ the -g extension is the gradient color for all those variables
   --color-white: #f9fafb;
   --color-star: #fcff52;
   --color-star-g: #f8e913;
-}
+} */
 
 /* my personal favorite (purple ish color) */
-/* @theme {
+@theme {
   --color-accent: #572f97;
   --color-accent-g: #9e22e6;
   --color-black: #170f22;
@@ -32,7 +32,7 @@ the -g extension is the gradient color for all those variables
   --color-white: #f9fafb;
   --color-star: #fcff52;
   --color-star-g: #f8e913;
-} */
+}
 
 /* light-red theme sample */
 /* @theme {

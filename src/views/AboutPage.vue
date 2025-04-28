@@ -159,6 +159,7 @@ onMounted(() => {
         class="flex flex-col justify-start md:justify-end w-full xl:w-fit items-center h-full xl:h-full gap-5"
       >
         <div
+          v-if="config.customize.aboutMePage.randomQuote.enabled"
           :class="[
             'secondaryFont',
             'outAnim animate__animated animate__backInUp',
