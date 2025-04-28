@@ -38,8 +38,8 @@ To clone and set up the project locally, follow these steps:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/chixirra/personal-website-vue.git
-   cd personal-websit-vue
+   git clone https://github.com/chixirra/personal-website.git
+   cd personal-websit
    ```
 
 2. Install dependencies:
