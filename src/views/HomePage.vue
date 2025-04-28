@@ -6,12 +6,12 @@ import config from '@/config'
 <template>
   <div
     id="#name-card"
-    class="text-white text-center flex flex-col justify-center flex-nowrap items-center h-screen gap-5"
+    class="text-white text-center flex flex-col justify-center flex-nowrap items-center h-screen gap-5 md:gap-10 xl:gap-20"
   >
     <div class="outAnim font-black text-white animate__animated animate__backInDown">
       <div class="flex flex-col justify-center items-center">
         <img
-          v-if="config.customize.showProfilePicture"
+          v-if="config.customize.homePage.showProfilePicture"
           id="#profile-picture"
           src="@/assets/images/profile.png"
           alt="profile picture"
@@ -30,7 +30,7 @@ import config from '@/config'
             'primaryFont font-black tracking-wider leading-[0.75] bg-clip-text bg-gradient-to-br from-accent to-accent-g text-transparent',
           ]"
         >
-          <span v-html="config.customize.homePageName.toUpperCase()"></span>
+          <span v-html="config.customize.homePage.displayName.toUpperCase()"></span>
         </span>
         <span
           id="#name-text"

@@ -3,6 +3,8 @@ import BackgroundPattern from '@/components/BackgroundPattern.vue'
 import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import CreditFooter from './components/CreditFooter.vue'
+import SiteNotice from './components/SiteNotice.vue'
+import config from '@/config'
 
 const route = useRoute()
 const currentPattern = ref('squares')
@@ -24,16 +26,13 @@ watch(
 </script>
 
 <template>
-  <!-- <span
-    class="primaryFont text-white text-center align-middle flex flex-col justify-center flex-nowrap items-center"
-    >this site isn't ready so right now it's just a preview lacking in most functionality</span
-  > -->
+  <SiteNotice v-if="config.customize.headerWarning.enabled" />
 
   <div class="relative h-screen overflow-hidden">
     <BackgroundPattern :pattern="currentPattern" />
-    <div class="overflow-y-auto overflow-x-hidden h-full custom-scrollbar ">
-      <RouterView  />
+    <div class="overflow-y-auto overflow-x-hidden h-full custom-scrollbar">
+      <RouterView />
     </div>
   </div>
-  <CreditFooter />
+  <CreditFooter v-if="config.customize.showCredits" />
 </template>

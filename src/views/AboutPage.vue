@@ -120,21 +120,10 @@ onMounted(() => {
               biography
             </div>
           </div>
-          <p class="text-[1rem] lowercase leading-normal w-fit">
-            - feel free to call me cristian :) <br />- I'm a 17-year-old Romanian high school
-            student, learning UI/UX design
-            <span class="italic opacity-33"
-              >i can't say this site is very good work in that regard</span
-            >
-            and programming.<br />
-            - My interests lie in computers and digital content; gaming (Valorant, modded Minecraft,
-            ghost of tsushima, and many other games...), photography, listening to music,
-            rainy/foggy walks, nature at night, reading manga, watching anime, ocasionally drawing.
-            <br />- I love animals, especially my pets
-            <span class="italic opacity-33">check the star ;)</span><br />
-            - i strive to constantly improve my abilities
-            <span class="italic opacity-33">that's a lie, im lazy</span>
-          </p>
+          <p
+            class="text-[1rem] lowercase leading-normal w-fit"
+            v-html="config.customize.aboutMePage.biography"
+          ></p>
         </div>
         <div
           :class="[
@@ -161,8 +150,7 @@ onMounted(() => {
             </div>
           </div>
           <p class="text-[1rem] lowercase leading-normal w-fit max-w-[45rem]">
-            git, unity, figma, [ts] typescript, [js] javascript, [html] html, [css] css, [vue]
-            vue.js, [c-sharp] c#, [fb] firebase, mongodb, [ex] express.js
+            <!-- // TODO: techstack -->
           </p>
         </div>
       </div>
