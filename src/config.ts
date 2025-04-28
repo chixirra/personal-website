@@ -12,7 +12,7 @@ export default {
   },
   customize: {
     headerWarning: {
-      enabled: false,
+      enabled: true,
       size: 5, // this is just padding size
       message: `i'm still working on coding this website, due to that, things may not work as intended and may look VERY wrong`,
     }, // this is the message at the top of the page, you can use this to advertise that you are looking for a job or something like that, or you can disable it
