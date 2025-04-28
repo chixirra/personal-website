@@ -24,14 +24,15 @@ watch(
 </script>
 
 <template>
-  <span
+  <!-- <span
     class="primaryFont text-white text-center align-middle flex flex-col justify-center flex-nowrap items-center"
     >this site isn't ready so right now it's just a preview lacking in most functionality</span
-  >
-  <BackgroundPattern :pattern="currentPattern" />
-  <div class="relative w-full h-full overflow-hidden">
-    <div class="overflow-y-auto overflow-x-hidden h-full custom-scrollbar">
-      <RouterView />
+  > -->
+
+  <div class="relative h-screen overflow-hidden">
+    <BackgroundPattern :pattern="currentPattern" />
+    <div class="overflow-y-auto overflow-x-hidden h-full custom-scrollbar ">
+      <RouterView  />
     </div>
   </div>
   <CreditFooter />

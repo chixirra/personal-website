@@ -2,9 +2,18 @@
 
 /* CHANGE THE COLORS HERE */
 
+/* before you jump at me, i know the color names are misleading
+--color-accent is exactly what it says, 
+--color-black is the background color of the site
+--color-white is the text
+--color-star is just the star icon on the site :)
+
+the -g extension is the gradient color for all those variables
+*/
+
 /* remember to change the metadata in the config since it is not automatic */
 /* default theme */
-/* @theme {
+@theme {
   --color-accent: #4ae289;
   --color-accent-g: #92dfc4;
   --color-black: #071008;
@@ -12,38 +21,40 @@
   --color-white: #f9fafb;
   --color-star: #fcff52;
   --color-star-g: #f8e913;
-} */
+}
 
 /* my personal favorite (purple ish color) */
-@theme {
+/* @theme {
   --color-accent: #572f97;
   --color-accent-g: #9e22e6;
-  --color-black: #0b0710;
+  --color-black: #170f22;
   --color-black-g: #010704;
   --color-white: #f9fafb;
   --color-star: #fcff52;
   --color-star-g: #f8e913;
-}
+} */
 
 /* light-red theme sample */
 /* @theme {
-  --color-accent: #f58888;
+  --color-accent: #f06969;
   --color-accent-g: #ff0000;
-  --color-black: #f3caca;
-  --color-black-g: #ecb5b5;
-  --color-white: #051107;
-  --color-star: #fcff52;
+  --color-black: #ffdede;
+  --color-black-g: #f8dddd;
+  --color-white: #160606;
+  --color-star: #fffb10;
   --color-star-g: #f8e913;
 } */
 
 html,
 body {
   overflow-x: hidden;
+}
+* {
   scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar {
-  display: none;
+  background: transparent;
 }
 
 * {
@@ -82,9 +93,4 @@ body {
 .custom-scrollbar {
   scrollbar-width: thin;
   scrollbar-color: var(--color-accent) transparent;
-}
-
-/* Smooth scrolling */
-.custom-scrollbar {
-  scroll-behavior: smooth;
 }

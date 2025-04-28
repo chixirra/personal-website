@@ -60,39 +60,37 @@ defineProps({
 .squares {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow-y: hidden;
   z-index: 0;
   overflow: hidden;
   background:
-    linear-gradient(45deg, transparent 49%, #ffffff 49% 51%, transparent 51%),
-    linear-gradient(-45deg, transparent 49%, #ffffff 49% 51%, transparent 51%);
-  filter: contrast(100);
+    linear-gradient(45deg, transparent 49%, var(--color-white) 49% 51%, transparent 51%),
+    linear-gradient(-45deg, transparent 49%, var(--color-white) 49% 51%, transparent 51%);
   background-size: 5em 5em;
   background-color: gradient(to bottom, var(--color-black), var(--color-black-g));
   opacity: 0.04;
-  animation: move-pattern-1 40s linear infinite;
+  animation: move-pattern-1 80s linear infinite;
   background-repeat: repeat;
 }
 
 .dots {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   overflow-y: hidden;
   z-index: 0;
   overflow: hidden;
   background:
-    radial-gradient(circle, #ffffff 10%, transparent 11%),
-    radial-gradient(circle at bottom left, #ffffff 5%, transparent 6%),
-    radial-gradient(circle at bottom right, #ffffff 5%, transparent 6%),
-    radial-gradient(circle at top left, #ffffff 5%, transparent 6%),
-    radial-gradient(circle at top right, #ffffff 5%, transparent 6%);
+    radial-gradient(circle, var(--color-white) 10%, transparent 11%),
+    radial-gradient(circle at bottom left, var(--color-white) 5%, transparent 6%),
+    radial-gradient(circle at bottom right, var(--color-white) 5%, transparent 6%),
+    radial-gradient(circle at top left, var(--color-white) 5%, transparent 6%),
+    radial-gradient(circle at top right, var(--color-white) 5%, transparent 6%);
   background-size: 3em 3em;
-  filter: contrast(100);
   background-color: gradient(to bottom, var(--color-black), var(--color-black-g));
-  opacity: 0.03;
-  animation: move-pattern-2 40s linear infinite;
+  opacity: 0.04;
+  animation: move-pattern-2 80s linear infinite;
   background-repeat: repeat;
 }
 

@@ -6,7 +6,7 @@ import config from '@/config'
 <template>
   <div
     id="#name-card"
-    class="text-white text-center flex flex-col justify-center flex-nowrap items-center h-screen"
+    class="text-white text-center flex flex-col justify-center flex-nowrap items-center h-screen gap-5"
   >
     <div class="outAnim font-black text-white animate__animated animate__backInDown">
       <div class="flex flex-col justify-center items-center">
