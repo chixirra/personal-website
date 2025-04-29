@@ -69,7 +69,7 @@ defineProps({
     linear-gradient(-45deg, transparent 49%, var(--color-white) 49% 51%, transparent 51%);
   background-size: 5em 5em;
   background-color: gradient(to bottom, var(--color-black), var(--color-black-g));
-  opacity: 0.04;
+  opacity: 0.03;
   animation: move-pattern-1 80s linear infinite;
   background-repeat: repeat;
 }
@@ -89,7 +89,7 @@ defineProps({
     radial-gradient(circle at top right, var(--color-white) 5%, transparent 6%);
   background-size: 3em 3em;
   background-color: gradient(to bottom, var(--color-black), var(--color-black-g));
-  opacity: 0.04;
+  opacity: 0.03;
   animation: move-pattern-2 80s linear infinite;
   background-repeat: repeat;
 }

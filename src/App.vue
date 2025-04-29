@@ -9,6 +9,8 @@ import config from '@/config'
 const route = useRoute()
 const currentPattern = ref('squares')
 
+document.body.setAttribute('data-theme', config.customize.theme)
+
 // watch the route and update the pattern with a delay for fade-out
 watch(
   () => route.name,
@@ -30,9 +32,13 @@ watch(
 
   <div class="relative h-screen overflow-hidden">
     <BackgroundPattern :pattern="currentPattern" />
-    <div class="overflow-y-auto overflow-x-hidden h-full custom-scrollbar">
-      <RouterView />
+    <div class="relative h-screen overflow-hidden">
+      <div class="overflow-y-auto overflow-x-hidden h-full custom-scrollbar">
+        <RouterView />
+      </div>
     </div>
   </div>
   <CreditFooter v-if="config.customize.showCredits" />
+
+  <!-- TODO: Add a dock where you can see my music playing and also change theme settings -->
 </template>

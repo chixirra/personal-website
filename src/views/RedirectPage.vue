@@ -7,15 +7,25 @@ const router = useRouter()
 
 const path = route.params.pathMatch as string
 const links = config.links as Record<string, { address: string; text: string; icon: string }>
+links.redirect = {
+  address: '-',
+  text: '-',
+  icon: '-',
+} //ignore
 const link = links[path]?.address
-
-if (link) {
+const customLink = route.query.to as string | undefined
+if (customLink) {
+  setTimeout(() => {
+    window.location.href = customLink
+  }, config.customize.redirect.delay)
+}
+if (link && !customLink) {
   setTimeout(() => {
     router.push({ path: route.path })
     window.location.href = link
-  }, 500)
+  }, config.customize.redirect.delay)
 } else {
-  router.push({ name: 'home' })
+  if (!customLink) router.push({ name: 'home' })
 }
 </script>
 

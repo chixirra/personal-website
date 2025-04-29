@@ -29,7 +29,7 @@ const links = computed(() => {
     <div
       :class="[
         'p-5',
-        'outAnim backdrop-blur-[3px] backdrop-contrast-80 rounded-full animate__animated animate__backInLeft',
+        'outAnim backdrop-blur-[3px] backdrop-contrast-105 rounded-full animate__animated animate__backInLeft',
       ]"
     >
       <div class="flex flex-wrap justify-center gap-5">
@@ -52,7 +52,7 @@ const links = computed(() => {
         'text-[1rem] 2xl:text-[1.5rem] xl:text-[1.4rem] lg:text-[1.3rem] md:text-[1.2rem]',
         'outAnim font-light flex justify-items-center items-center flex-row ',
 
-        'backdrop-blur-[3px] backdrop-contrast-80 rounded-full animate__animated animate__backInRight',
+        'backdrop-blur-[3px] backdrop-contrast-105 rounded-full animate__animated animate__backInRight',
       ]"
     >
       <div class="flex flex-wrap justify-center items-center gap-5">
@@ -76,7 +76,7 @@ const links = computed(() => {
         </button>
         <button
           @click="HandleNavigation('/stars')"
-          class="bg-gradient-to-br from-star 'text-[1.25rem] 2xl:text-[2rem] xl:text-[1.8rem] lg:text-[1.6rem] md:text-[1.5rem] sm:text-[1.25rem]', to-star-g text-transparent bg-clip-text fas fa-star flex flex-col justify-center items-center cursor-pointer transition-transform duration-300 focus:scale-160 hover:scale-160"
+          class="bg-gradient-to-br from-star 'text-[1.25rem] 2xl:text-[2rem] xl:text-[1.8rem] lg:text-[1.6rem] md:text-[1.5rem] sm:text-[1.25rem]', to-star-g text-transparent bg-clip-text fas fa-star flex flex-col justify-center items-center cursor-pointer transition-transform duration-300 focus:scale-160 hover:scale-160 animate__animated animate__heartBeat animate__delay-2s"
         ></button>
       </div>
     </div>

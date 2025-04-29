@@ -22,6 +22,7 @@ export default defineConfig({
           color: config.metadata.color,
           url: config.metadata.url,
           image: config.metadata.image,
+          theme: config.customize.theme,
         },
       },
     }),

@@ -20,9 +20,10 @@ onMounted(() => {
       id="#navigation"
       class="primaryFont leading-tight font-medium gap-5 flex flex-col items-center justify-center"
     >
+      <!-- NAVIGATION BAR + PAGE NAME -->
       <div
         :class="[
-          'rounded-full backdrop-blur-[3px] backdrop-contrast-80 p-5',
+          'rounded-full backdrop-blur-[3px] backdrop-contrast-105 p-5',
           'outAnim animate__animated animate__backInLeft',
           'flex flex-row lg:flex-col justify-center items-center gap-5',
           'text-[1.8rem] lg:text-[2rem] xl:text-[2rem] 2xl:text-[2rem]',
@@ -60,14 +61,14 @@ onMounted(() => {
             'fas fa-star',
             'cursor-pointer transition-transform duration-300 focus:scale-180 hover:scale-180',
             'bg-gradient-to-br from-star to-star-g text-transparent bg-clip-text',
-            'animate__animated animate__heartBeat animate__delay-1s',
+            'animate__animated animate__heartBeat animate__delay-2s',
           ]"
         />
       </div>
 
       <div
         :class="[
-          'rounded-full backdrop-blur-[3px] backdrop-contrast-80 ',
+          'rounded-full backdrop-blur-[3px] backdrop-contrast-105 ',
           'outAnim animate__animated animate__backInLeft',
           'flex flex-wrap justify-center items-center gap-2',
           'text-[1.4rem] sm:text-[1.5rem] md:text-[1.75rem] lg:text-[2rem] xl:text-[2rem] 2xl:text-[2rem]',
@@ -91,6 +92,8 @@ onMounted(() => {
         </span>
       </div>
     </div>
+
+    <!-- THE ACTUAL PAGE CONTENT -->
     <div id="content" class="text-white flex gap-5 flex-col lg:flex-row">
       <div
         id="#leftside"
@@ -100,7 +103,7 @@ onMounted(() => {
           :class="[
             'secondaryFont',
             'outAnim animate__animated animate__backInDown',
-            'rounded-2xl backdrop-blur-[3px] backdrop-contrast-80 p-5 h-fit',
+            'rounded-2xl backdrop-blur-[3px] backdrop-contrast-105 p-5 h-fit',
             'w-full ',
             'flex flex-col text-justify items-start',
             'text-[2rem] w-full uppercase text-center',
@@ -129,7 +132,7 @@ onMounted(() => {
           :class="[
             'secondaryFont',
             'outAnim animate__animated animate__backInDown',
-            'rounded-2xl backdrop-blur-[3px] backdrop-contrast-80 p-5 h-fit',
+            'rounded-2xl backdrop-blur-[3px] backdrop-contrast-105 p-5 h-fit',
             'w-full',
             'flex flex-col text-justify items-start',
             'text-[2rem] w-full uppercase text-center',
@@ -151,6 +154,8 @@ onMounted(() => {
           </div>
           <p class="text-[1rem] lowercase leading-normal w-fit max-w-[45rem]">
             <!-- // TODO: techstack -->
+            lalalalalalalalalalalalalalalala asdasd as das
+            <br />asdasdaad;gojadgo;ahdghija<br />a sd asd as d asd asd a sd
           </p>
         </div>
       </div>
@@ -163,7 +168,7 @@ onMounted(() => {
           :class="[
             'secondaryFont',
             'outAnim animate__animated animate__backInUp',
-            'rounded-2xl backdrop-blur-[3px] backdrop-contrast-80 p-5 h-fit',
+            'rounded-2xl backdrop-blur-[3px] backdrop-contrast-105 p-5 h-fit',
             'w-full',
             'flex flex-col text-justify items-start',
             'text-[2rem] w-full uppercase text-center',
@@ -175,7 +180,7 @@ onMounted(() => {
             <span
               :class="[
                 'bg-gradient-to-br from-accent to-accent-g text-transparent bg-clip-text',
-                'text-[2.1rem] 2xl:text-[3.2rem] xl:text-[3.2rem] lg:text-[2.6rem] md:text-[2.2rem] sm:text-[2.1rem]',
+                'text-[3rem] xl:text-[4.1rem]',
               ]"
               >”</span
             >
@@ -188,7 +193,7 @@ onMounted(() => {
           :class="[
             'secondaryFont',
             'outAnim animate__animated animate__backInUp',
-            'rounded-2xl backdrop-blur-[3px] backdrop-contrast-80 p-5 h-fit',
+            'rounded-2xl backdrop-blur-[3px] backdrop-contrast-105 p-5 h-fit',
             'w-full',
             'flex flex-col text-justify items-start',
             'text-[2rem] w-full uppercase text-center',

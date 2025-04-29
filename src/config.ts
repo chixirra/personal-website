@@ -10,19 +10,48 @@ export default {
     // this is the image that will be used for the og:image tag, i recommend to use a 1200x630 image
     // add this image in the public folder and use your site's domain linked to it like in the example
   },
+  honorableMentions: [
+    {
+      title: 'my motivation',
+      description:
+        'this person :) <br /> i love her work and she is the reason i even made the site in the first place',
+      picture: '/stars/shar.png', // your image should be in the "public" folder
+      button: {
+        text: 'her video',
+        link: 'https://www.youtube.com/watch?v=_tWh4cYCTv0',
+        icon: 'fa fa-youtube',
+      },
+    },
+    {
+      title: 'my cat',
+      description: 'no questions asked. <a class="italic opacity-33">best car fr<a>',
+      picture: '/stars/cat.png',
+    },
+    {
+      title: 'my dogs',
+      description: "who doesn't love dogs",
+      picture: '/stars/dogs.png',
+    },
+  ], //false alarm, we're not using this i'll just hardcode them in
+
   customize: {
+    showCredits: true, // show author credits at the bottom of the page - only if you want
+    theme: 'toxic', // go to "./assets/theme.css" to view the themes, or create your own :)
+
+    redirect: {
+      delay: 800, // delay in milliseconds before redirecting to a page
+    },
     headerWarning: {
-      enabled: false,
+      enabled: true,
       size: 5, // this is just padding size
-      message: `i'm still working on coding this website, due to that, things may not work as intended and may look VERY wrong`,
+      message: `i'm still working this website's code, due to that, things may not work as intended and may look VERY wrong`,
     }, // this is the message at the top of the page, you can use this to advertise that you are looking for a job or something like that, or you can disable it
-    showCredits: true, // show author credits at the bottom of the page
     // i recommend using a longer name as it looks better but you can also just alter the code as you see fit
     // adding a <br> tag will make the name break into a new line
     // you can also add it at the beginning of the name to make it look better on the page if you plan on using a single name
     homePage: {
       displayName: 'chixirra',
-      showProfilePicture: false, // the profile picture will disappear for small screens regardless of this setting
+      showProfilePicture: true, // the profile picture will disappear for small screens regardless of this setting
     },
     aboutMePage: {
       randomQuote: {
@@ -56,19 +85,6 @@ export default {
       // i would recommend not keeping this very short because it will look weird on larger screens afterwards
     },
   },
-
-  // this is relatively advanced if you have no idea what an API is, while it isn't complicated to set up, you should familiarize yourself with the concept of APIs and how to use them
-  // api: {
-  //   discord: {
-  //     // please check the .env.example file I've provided below and make a new discord bot and put in the required keys https://discord.com/developers/applications
-  //     enabled: true, // enable showing discord status (to be specific, show if you're online or not)
-  //     apiLink: 'https://api.chixirra.xyz/get/status', // please go to the /discord directory and follow the readme to set up the discord bot and the express server
-  //   },
-  //   spotify: {
-  //     // not yet
-  //     enabled: true, // enable showing spotify song
-  //   },
-  // ignore this since i realized i can't currently do the discord thing since i can't buy a server or something right now
 
   links: {
     repository: {
@@ -116,5 +132,6 @@ export default {
     // use this if u want to redirect users to your email
 
     // each and every one of these links is accessible at yoursite.com/<link> (replace <link> with your item name, eg. chixirra.xyz/instagram)
+    // you may also redirect via: yoursite.com/redirect?to=<link> (replace <link> with your item name, eg. chixirra.xyz/redirect?to=https://google.com)
   },
 }

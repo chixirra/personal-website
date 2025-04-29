@@ -10,7 +10,7 @@ const handleNavigation = (path: string) => {
   if (isInternal) {
     setTimeout(() => {
       router.push(path)
-    }, 600)
+    }, 800)
 
     const elements = document.querySelectorAll('.outAnim')
     elements.forEach((element) => {

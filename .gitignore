@@ -27,7 +27,7 @@ coverage
 *.sln
 *.sw?
 
-/discord/*
+/discord/
 .env
 
 *.tsbuildinfo
