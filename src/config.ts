@@ -36,7 +36,7 @@ export default {
 
   customize: {
     showCredits: true, // show author credits at the bottom of the page - only if you want
-    theme: 'toxic', // go to "./assets/theme.css" to view the themes, or create your own :)
+    theme: 'crimson', // go to "./assets/theme.css" to view the themes, or create your own :)
 
     redirect: {
       delay: 800, // delay in milliseconds before redirecting to a page
@@ -51,7 +51,7 @@ export default {
     // you can also add it at the beginning of the name to make it look better on the page if you plan on using a single name
     homePage: {
       displayName: 'chixirra',
-      showProfilePicture: true, // the profile picture will disappear for small screens regardless of this setting
+      showProfilePicture: false, // the profile picture will disappear for small screens regardless of this setting
     },
     aboutMePage: {
       randomQuote: {
