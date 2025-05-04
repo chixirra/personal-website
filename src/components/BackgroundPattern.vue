@@ -144,7 +144,7 @@ defineProps({
       transparent 53%
     );
 
-  opacity: 0.01;
+  opacity: 0.03;
   background-size: 3em 3em;
   animation: move-pattern-1 80s linear infinite;
   background-color: gradient(to bottom, var(--color-black), var(--color-black-g));
