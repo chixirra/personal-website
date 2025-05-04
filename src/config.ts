@@ -4,7 +4,7 @@ export default {
     author: 'chixirra',
     description: 'my personal website :)',
     keywords: 'chixirra, chi, irra, chixi, chix, xirra, portfolio, website, chixirra.xyz',
-    color: '#572f97',
+    color: '#dc143c',
     url: 'https://chixirra.xyz',
     image: 'https://chixirra.xyz/meta.png',
     // this is the image that will be used for the og:image tag, i recommend to use a 1200x630 image
@@ -35,14 +35,14 @@ export default {
   ], //false alarm, we're not using this i'll just hardcode them in
 
   customize: {
-    showCredits: true, // show author credits at the bottom of the page - only if you want
-    theme: 'toxic', // go to "./assets/theme.css" to view the themes, or create your own :)
+    showCredits: false, // show author credits at the bottom of the page - only if you want
+    theme: 'crimson', // go to "./assets/theme.css" to view the themes, or create your own :)
 
     redirect: {
       delay: 800, // delay in milliseconds before redirecting to a page
     },
     headerWarning: {
-      enabled: true,
+      enabled: false,
       size: 5, // this is just padding size
       message: `i'm still working this website's code, due to that, things may not work as intended and may look VERY wrong`,
     }, // this is the message at the top of the page, you can use this to advertise that you are looking for a job or something like that, or you can disable it
@@ -51,7 +51,7 @@ export default {
     // you can also add it at the beginning of the name to make it look better on the page if you plan on using a single name
     homePage: {
       displayName: 'chixirra',
-      showProfilePicture: true, // the profile picture will disappear for small screens regardless of this setting
+      showProfilePicture: false, // the profile picture will disappear for small screens regardless of this setting
     },
     aboutMePage: {
       randomQuote: {

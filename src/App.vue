@@ -18,6 +18,9 @@ watch(
     const patternMap: Record<string, string> = {
       default: 'squares',
       about: 'dots',
+      projects: 'squares',
+      contact: 'squares',
+      stars: 'stars',
     }
     setTimeout(() => {
       currentPattern.value =

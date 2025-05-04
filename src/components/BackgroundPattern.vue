@@ -73,7 +73,6 @@ defineProps({
   animation: move-pattern-1 80s linear infinite;
   background-repeat: repeat;
 }
-
 .dots {
   position: absolute;
   width: 100%;
@@ -92,6 +91,63 @@ defineProps({
   opacity: 0.03;
   animation: move-pattern-2 80s linear infinite;
   background-repeat: repeat;
+}
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 200vh;
+  overflow-y: hidden;
+  z-index: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at top left,
+      transparent 9%,
+      var(--color-white) 10%,
+      var(--color-white) 15%,
+      transparent 16%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      transparent 9%,
+      var(--color-white) 10%,
+      var(--color-white) 15%,
+      transparent 16%
+    ),
+    radial-gradient(
+      circle at top right,
+      transparent 9%,
+      var(--color-white) 10%,
+      var(--color-white) 15%,
+      transparent 16%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      transparent 9%,
+      var(--color-white) 10%,
+      var(--color-white) 15%,
+      transparent 16%
+    ),
+    radial-gradient(circle, transparent 25%, var(--color-black) 0%),
+    linear-gradient(
+      45deg,
+      transparent 46%,
+      var(--color-white) 47%,
+      var(--color-white) 52%,
+      transparent 53%
+    ),
+    linear-gradient(
+      135deg,
+      transparent 46%,
+      var(--color-white) 47%,
+      var(--color-white) 52%,
+      transparent 53%
+    );
+
+  opacity: 0.01;
+  background-size: 3em 3em;
+  animation: move-pattern-1 80s linear infinite;
+  background-color: gradient(to bottom, var(--color-black), var(--color-black-g));
 }
 
 .fade-enter-active,

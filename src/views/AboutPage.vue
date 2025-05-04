@@ -18,7 +18,7 @@ onMounted(() => {
   <div id="#about-me" class="text-white flex flex-col lg:h-screen lg:flex-row gap-5 p-5">
     <div
       id="#navigation"
-      class="primaryFont leading-tight font-medium gap-5 flex flex-col items-center justify-center"
+      class="primaryFont leading-tight font-medium gap-5 flex h-full lg:h-screen flex-col items-center justify-center"
     >
       <!-- NAVIGATION BAR + PAGE NAME -->
       <div
@@ -71,7 +71,7 @@ onMounted(() => {
           'rounded-full backdrop-blur-[3px] backdrop-contrast-105 ',
           'outAnim animate__animated animate__backInLeft',
           'flex flex-wrap justify-center items-center gap-2',
-          'text-[1.4rem] sm:text-[1.5rem] md:text-[1.75rem] lg:text-[2rem] xl:text-[2rem] 2xl:text-[2rem]',
+          'text-[1.8rem] lg:text-[2rem] xl:text-[2rem] 2xl:text-[2rem]',
           'w-full text-center uppercase',
         ]"
       >

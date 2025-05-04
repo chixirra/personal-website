@@ -17,8 +17,8 @@ const router = createRouter({
       component: AboutPage,
     },
     // TODO:
-    // { path: '/projects', name: 'projects',  component: ProjectsPage, },
-    // { path: '/contact', name: 'contact',  component: ProjectsPage, },
+    // { path: '/projects', name: 'projects', component: ProjectsPage },
+    // { path: '/contact', name: 'contact', component: ContactPage },
     { path: '/stars', name: 'stars', component: HonorableMentionsPage },
     {
       path: '/:pathMatch(.*)*',
