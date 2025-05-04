@@ -5,6 +5,22 @@
   "license": "MIT",
   "private": true,
   "type": "module",
+  "keywords": [
+    "seo",
+    "animations",
+    "particles",
+    "vite",
+    "vue",
+    "typescript",
+    "tailwindcss",
+    "portfolio",
+    "personal-website",
+    "chixirra",
+    "chixirra.github.io",
+    "chixirra.github",
+    "free",
+    "open-source"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",

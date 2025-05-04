@@ -85,5 +85,95 @@ import HandleNavigation from '@/utils/HandleNavigation'
         </span>
       </div>
     </div>
+    <div id="content" class="text-white flex gap-5 flex-col lg:flex-row">
+      <div
+        id="#leftside"
+        class="flex flex-col justify-start w-full xl:w-fit items-center h-fit gap-5"
+      >
+        <div id="#content-cards" class="h-full w-full flex flex-wrap p-5">
+          <div
+            :class="[
+              'p-5',
+              'outAnim animate__animated animate__bounceIn animate__delay-1s',
+              'backdrop-blur-[3px] backdrop-contrast-105 rounded-2xl',
+            ]"
+          >
+            <img src="@/assets/images/stars/shar.png" :class="['rounded-2xl', 'w-fit h-fit']" />
+            <div class="flex flex-row text-left gap-3 primaryFont lowercase font-bold">
+              <span
+                :class="[
+                  'bg-gradient-to-br from-accent to-accent-g text-transparent bg-clip-text',
+                  'text-[2.1rem] 2xl:text-[3.2rem] xl:text-[3.2rem] lg:text-[2.6rem] md:text-[2.2rem] sm:text-[2.1rem]',
+                ]"
+                >#</span
+              >
+              <div
+                class="flex flex-row gap-x-2 xl:flex-col justify-center items-center content-center text-white"
+              >
+                tech stack
+              </div>
+            </div>
+            <p class="text-[1rem] lowercase leading-normal w-fit max-w-[45rem]">
+              <!-- // TODO: fix this thing -->
+              lalalalalalalalalalalalalalalala asdasd as das
+              <br />asdasdaad;gojadgo;ahdghija<br />a sd asd as d asd asd a sd
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        id="#rightside"
+        class="flex flex-col justify-start md:justify-end w-full xl:w-fit items-center h-full xl:h-full gap-5"
+      >
+        <div
+          :class="[
+            'secondaryFont',
+            'outAnim animate__animated animate__backInUp',
+            'rounded-2xl backdrop-blur-[3px] backdrop-contrast-105 p-5 h-fit',
+            'w-full',
+            'flex flex-col text-justify items-start',
+            'text-[2rem] w-full uppercase text-center',
+          ]"
+        >
+          <div
+            class="flex flex-row text-left justify-center items-center gap-3 primaryFont lowercase font-bold"
+          >
+            <span
+              :class="[
+                'bg-gradient-to-br from-accent to-accent-g text-transparent bg-clip-text',
+                'text-[3rem] xl:text-[4.1rem]',
+              ]"
+              >”</span
+            >
+          </div>
+        </div>
+        <div
+          :class="[
+            'secondaryFont',
+            'outAnim animate__animated animate__backInUp',
+            'rounded-2xl backdrop-blur-[3px] backdrop-contrast-105 p-5 h-fit',
+            'w-full',
+            'flex flex-col text-justify items-start',
+            'text-[2rem] w-full uppercase text-center',
+          ]"
+        >
+          <div class="flex flex-row text-left gap-3 primaryFont lowercase font-bold">
+            <span
+              :class="[
+                'bg-gradient-to-br from-accent to-accent-g text-transparent bg-clip-text',
+                'text-[2.1rem] 2xl:text-[3.2rem] xl:text-[3.2rem] lg:text-[2.6rem] md:text-[2.2rem] sm:text-[2.1rem]',
+              ]"
+              >#</span
+            >
+            <div
+              class="flex flex-row gap-x-2 xl:flex-col justify-center items-center content-center text-white"
+            >
+              short history
+            </div>
+          </div>
+          <p class="text-[1rem] lowercase leading-normal w-full"></p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
