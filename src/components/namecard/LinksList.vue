@@ -62,13 +62,13 @@ const links = computed(() => {
         >
           about me
         </button>
-        <button
+       <!--  TODO: fix these<button
           @click="HandleNavigation('/projects')"
           class="flex flex-col justify-center items-center cursor-pointer transition-transform duration-300 focus:scale-120 hover:scale-120"
         >
           projects
         </button>
-        <button
+       <button
           @click="HandleNavigation('/contact')"
           class="flex flex-col justify-center items-center cursor-pointer transition-transform duration-300 focus:scale-120 hover:scale-120"
         >
@@ -78,6 +78,7 @@ const links = computed(() => {
           @click="HandleNavigation('/stars')"
           class="bg-gradient-to-br from-star 'text-[1.25rem] 2xl:text-[2rem] xl:text-[1.8rem] lg:text-[1.6rem] md:text-[1.5rem] sm:text-[1.25rem]', to-star-g text-transparent bg-clip-text fas fa-star flex flex-col justify-center items-center cursor-pointer transition-transform duration-300 focus:scale-160 hover:scale-160 animate__animated animate__heartBeat animate__delay-2s"
         ></button>
+        -->
       </div>
     </div>
   </div>
