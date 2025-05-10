@@ -57,7 +57,9 @@ export default {
       randomQuote: {
         enabled: true, // enable the random quote widget
       },
-      biography: `- feel free to call me cristian :) <br />
+      biography: 'later',
+      shortHistory: 'later',
+      /* biography: `- feel free to call me cristian :) <br />
             - I'm a 17-year-old Romanian high school
             student, learning UI/UX design
             <span class="italic opacity-33">i can't say this site is very good work in that regard</span>
@@ -81,7 +83,7 @@ export default {
             time. <br> Watching dev logs inspired me to try game development, leading me to
             explore game art and music. While I didn't particularly do well in those areas, the
             learning process was very much enjoyable and rewarding to me, seeing my ideas come to
-            life`,
+            life`, */
       // i would recommend not keeping this very short because it will look weird on larger screens afterwards
     },
   },
