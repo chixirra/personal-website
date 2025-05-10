@@ -44,7 +44,7 @@ export default {
     headerWarning: {
       enabled: true,
       size: 5, // this is just padding size
-      message: `i'm still working this website's code, due to that, things may not work as intended and may look VERY wrong`,
+      message: `for the time being im scrapping this site as I am not satisfied with it in the slightest, thank u for ur understanding`,
     }, // this is the message at the top of the page, you can use this to advertise that you are looking for a job or something like that, or you can disable it
     // i recommend using a longer name as it looks better but you can also just alter the code as you see fit
     // adding a <br> tag will make the name break into a new line
